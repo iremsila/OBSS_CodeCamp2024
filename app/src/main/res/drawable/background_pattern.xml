@@ -1,0 +1,21 @@
+<!-- background_pattern.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Background Layer (optional, transparent if only pattern needed) -->
+    <item>
+        <color android:color="@android:color/transparent" />
+    </item>
+
+    <!-- Dots Layer -->
+    <item>
+        <shape
+            android:shape="rectangle">
+            <size
+                android:width="4dp"
+                android:height="4dp" />
+            <solid android:color="#FF6200EE" />
+            <corners android:radius="2dp" />
+        </shape>
+    </item>
+
+</layer-list>

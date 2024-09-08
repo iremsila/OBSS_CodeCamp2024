@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="background_for_text">#FF6D84</color>
+    <color name="dark_grey">#181818</color>
+    <color name="spinnerBackground">#FFFFFF</color>
+    <color name="spinnerBorder">#DDDDDD</color>
+    <color name="spinnerTextColor">#000000</color>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="key_text_color">#FF9800</color>
+    <color name="value_text_color">#424242</color>
+    <color name="heart_icon_color">#D32F2F</color>
+    <color name="background_color">#F5F5F5</color>
+    <color name="title_color">#FF5722</color>
+    <color name="text_color">#212121</color>
+    <color name="secondary_text_color">#757575</color>
+    <color name="chip_background">#1F1F1F</color>
+    <color name="chip_stroke">#BB86FC</color>
+    <color name="colorSecondaryVariant">#018786</color>
+    <color name="background">#121212</color>
+    <color name="colorSecondary">#018786</color>
+    <color name="bottomNavBackground">#FFFFFF</color>
+</resources>

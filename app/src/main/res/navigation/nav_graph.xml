@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/LoginFragment"> <!-- Set start destination to MovieFragment -->
+
+    <!-- Login Fragment -->
+    <fragment
+        android:id="@+id/LoginFragment"
+        android:name="com.iremsilayildirim.homework1.ui.login.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_movieFragment"
+            app:destination="@id/navigation_home" />
+    </fragment>
+
+    <!-- Register Fragment -->
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.iremsilayildirim.homework1.ui.login.RegisterFragment"
+        android:label="Register"
+        tools:layout="@layout/fragment_register">
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/LoginFragment" />
+    </fragment>
+
+    <!-- Movie Fragment (acts as Home) -->
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.iremsilayildirim.homework1.ui.listpage.MovieFragment"
+        android:label="Movies"
+        tools:layout="@layout/fragment_movie">
+        <action
+            android:id="@+id/action_movieFragment_to_movieDetailFragment"
+            app:destination="@id/movieDetailFragment" />
+    </fragment>
+
+    <!-- Movie Detail Fragment -->
+    <fragment
+        android:id="@+id/movieDetailFragment"
+        android:name="com.iremsilayildirim.homework1.ui.detailpage.MovieDetailFragment">
+        <argument
+            android:name="movieId"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_movieDetailFragmentSelf"
+            app:destination="@id/movieDetailFragment" />
+    </fragment>
+
+    <!-- Search Fragment -->
+    <fragment
+        android:id="@+id/navigation_search"
+        android:name="com.iremsilayildirim.homework1.ui.search.SearchFragment"
+        android:label="Search"
+        tools:layout="@layout/fragment_search">
+        <action
+            android:id="@+id/action_search_to_movieDetail"
+            app:destination="@id/movieDetailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <!-- Favorite Fragment -->
+    <fragment
+        android:id="@+id/navigation_favorite"
+        android:name="com.iremsilayildirim.homework1.ui.favorite.FavoriteFragment"
+        android:label="Favorites"
+        tools:layout="@layout/fragment_favorite">
+        <action
+            android:id="@+id/action_favoriteFragment_to_movieDetailFragment"
+            app:destination="@id/movieDetailFragment" />
+    </fragment>
+
+
+    <!-- Profile Fragment -->
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.iremsilayildirim.homework1.ui.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+
+</navigation>

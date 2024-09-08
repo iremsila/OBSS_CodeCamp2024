@@ -1,0 +1,82 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="60dp"
+    android:paddingTop="10dp">
+
+    <!-- Search Box Layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="top">
+
+        <!-- Container with shadow effect -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="12dp"
+            app:cardBackgroundColor="#353535"
+            android:layout_marginRight="8dp">
+
+        <!-- EditText for search input -->
+            <EditText
+                android:id="@+id/editTextSearch"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@android:color/transparent"
+                android:drawableStart="@drawable/ic_search"
+                android:drawablePadding="8dp"
+                android:hint="Search Movies"
+                android:inputType="text"
+                android:padding="8dp"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/darker_gray" />
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+    <!-- RecyclerView for Movies -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingBottom="60dp"
+        android:scrollbars="vertical"
+        android:layout_marginTop="75dp" /> <!-- RecyclerView'e üstten boşluk -->
+
+    <!-- Spinner for Layout Selection -->
+    <Spinner
+        android:id="@+id/layoutSelectorSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:background="@drawable/spinner_background"
+        android:padding="8dp"
+        android:popupBackground="@color/spinnerBackground"
+        android:dropDownVerticalOffset="10dp" />
+    <LinearLayout
+        android:id="@+id/loadingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:background="@android:color/transparent">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true" />
+    </LinearLayout>
+</FrameLayout>

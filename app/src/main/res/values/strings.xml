@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Movies</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="pokemon_image">Pokemon Image</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="select_view_type">Select View Type</string>
+    <string-array name="view_types">
+        <item>Single</item>
+        <item>2 Pieces</item>
+        <item>3 Pieces</item>
+    </string-array>
+    <string name="favorite_icon_description">Favorilere Ekle</string>
+    <string name="movie_title">Film Başlığı</string>
+    <string name="movie_overview">Film Özeti</string>
+    <string name="release_date">Yayınlanma Tarihi</string>
+    <string name="runtime">Uzunluk</string>
+    <string name="genres">Türler</string>
+    <string name="favorite_icon">Favorite</string>
+    <string name="movie_poster">Movie Poster</string>
+
+</resources>

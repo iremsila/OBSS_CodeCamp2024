@@ -1,0 +1,14 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background color -->
+    <item android:drawable="@color/black" />
+
+    <!-- Optional gradient or overlay -->
+    <item android:drawable="@drawable/background_gradient" />
+
+    <!-- Optional pattern or image overlay -->
+    <item>
+        <bitmap
+            android:src="@drawable/profile_background"
+            android:tileMode="repeat" />
+    </item>
+</layer-list>
